@@ -14,27 +14,54 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+
+    <script>
+        function shuffleBadgesAll(containerSelector) {
+            const containers = document.querySelectorAll(containerSelector);
+            containers.forEach(container => {
+                const badges = Array.from(container.children);
+                for (let i = badges.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [badges[i], badges[j]] = [badges[j], badges[i]];
+                }
+                badges.forEach(badge => container.appendChild(badge));
+            });
+        }
+
+        // Shuffle every 5 seconds
+        setInterval(() => {
+            shuffleBadgesAll('.skills-badge-container');
+        }, 5000);
+    </script>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -43,7 +70,8 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
             <h1 class="text-primary fw-b m-0">Welcome</h1>
         </a>
@@ -81,7 +109,8 @@
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">Web/Mobile Developer, Front End Developer, AI Enthusiast</div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="DASUNI UTHPALA - Full Stack Developer Resume.pdf"
+                            class="btn btn-primary py-3 px-4 me-5">Download Resume</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -96,39 +125,49 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">7</h1>
+                            <h1 class="display-1 mb-0">5+</h1>
                             <h5 class="mb-0">Years</h5>
                         </div>
-                        <h3 class="lh-base mb-0">hands-on experience as a Software Engineer, including four years of academic training</h3>
+                        <h3 class="lh-base mb-0">Full Stack / Frontend Developer with Hands-on Experience in Real-world
+                            Projects</h3>
                     </div>
-                    <p class="mb-4">I am an experienced software developer skilled in web and mobile application development and have a strong background in database management and machine learning, including deep learning, Gen AI, LLMs architectures and NLP. Committed to quality and innovation, I thrive in collaborative environments and am eager to contribute to cutting-edge projects.</p>
-                    <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Frontend development is being explored with a keen interest in leveraging AI/ML technologies to create intuitive and
-                        intelligent user interfaces that redefine user interactions and experiences.</p>
+                    <p class="mb-4">I’m a passionate software developer with hands-on experience in web application
+                        development, specializing in frontend technologies. I’m currently focused on building scalable,
+                        user-friendly interfaces using modern JavaScript frameworks, while continuously expanding my
+                        skills in AI, machine learning, and cloud technologies.</p>
+                    <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Actively exploring frontend development
+                        with a strong interest in integrating AI/ML to create intelligent, responsive user interfaces
+                        that enhance user experience.</p>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="d-flex align-items-center mb-3">
-                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Knowledge of Azure and AWS was gained during postgraduate certificate studies, broadening the understanding of
-                            cloud technologies and their applications</p>
-                    </div>
-                    
-                    <div class="d-flex align-items-center mb-3">
-                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Exceptional problem-solving skills, honed over years of experience, have consistently delivered high-quality solutions
-                            within demanding timeframes.</p>
+                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Working knowledge of Azure and AWS,
+                            gained through postgraduate studies and practical application, supports my growing
+                            capabilities in cloud-based development.</p>
                     </div>
 
                     <div class="d-flex align-items-center mb-3">
-                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Strong communication skills and a collaborative approach have enabled seamless teamwork across departments,
-                            ensuring project success.</p>
+                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Strong problem-solving abilities
+                            and a proactive mindset help me deliver solutions efficiently, even under tight deadlines.
+                        </p>
                     </div>
 
                     <div class="d-flex align-items-center mb-3">
-                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Extensive experience has been leveraged to specialize in building reusable component libraries and implementing
-                            modern UI frameworks to enhance user experiences.</p>
+                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Effective communicator and
+                            collaborative team player, comfortable working across disciplines to move projects forward
+                            smoothly.</p>
                     </div>
 
                     <div class="d-flex align-items-center mb-3">
-                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Proficiency in Agile/Scrum methodologies is maintained, staying updated on the latest UI/UX trends and allowing
-                            for efficient management of multiple projects in fast-paced environments.</p>
+                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Focused on building clean, reusable
+                            components and implementing modern UI frameworks to improve maintainability and user
+                            engagement.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <p class="mb-3"><i class="bi bi-stars text-primary me-3"></i>Experienced with Agile/Scrum
+                            practices, continuously learning and adapting to current UI/UX trends for better project
+                            outcomes.</p>
                     </div>
                 </div>
             </div>
@@ -140,138 +179,56 @@
     <!-- Expertise Start -->
     <div class="container-xxl py-6 pb-5" id="skill">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills</h1>
-                    <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">JavaScript</h6>
-                                    <h6 class="font-weight-b">98%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">ReactJs</h6>
-                                    <h6 class="font-weight-b">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">React Native</h6>
-                                    <h6 class="font-weight-b">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">Python</h6>
-                                    <h6 class="font-weight-b">70%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-green"  role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">HTML</h6>
-                                    <h6 class="font-weight-b">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">Angular JS</h6>
-                                    <h6 class="font-weight-b">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-b">PHP</h6>
-                                    <h6 class="font-weight-b">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="mb-4">Core Technologies</h3>
+                    <div class="d-flex flex-wrap gap-3 mb-4 skills-badge-container">
+                        <span class="badge-card"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="badge-icon"><i class="devicon-nextjs-original-wordmark colored"></i> Next.js</span>
+                        <span class="badge-card"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                        <span class="badge-icon"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                        <span class="badge-card"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="badge-icon"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                        <span class="badge-card"><i class="devicon-angularjs-plain colored"></i> AngularJS</span>
+                        <span class="badge-icon"><i class="devicon-sass-original colored"></i> SASS/SCSS</span>
+                        <span class="badge-card"><i class="devicon-dot-net-plain-wordmark colored"></i> .NET</span>
+                        <span class="badge-icon"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        <span class="badge-card"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
+                        <span class="badge-icon"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="badge-card"><i class="devicon-redux-original colored"></i> Redux</span>
+                        <span class="badge-icon"><i class="devicon-csharp-line colored"></i> C#</span>
+                    </div>
+
+                    <h3 class="mb-4">Tooling & Practices</h3>
+                    <div class="d-flex flex-wrap gap-2 mb-4 skills-badge-container">
+                        <span class="badge-card"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="badge-icon"><i class="devicon-github-original colored"></i> GitHub</span>
+                        <span class="badge-card"><i class="devicon-bitbucket-original colored"></i> Bitbucket</span>
+                        <span class="badge-icon"><i class="devicon-jenkins-line colored"></i> Jenkins</span>
+                        <span class="badge-card"><i class="devicon-webpack-plain colored"></i> Webpack</span>
+                        <span class="badge-icon"><i class="devicon-babel-plain colored"></i> Babel</span>
+                        <span class="badge-card"><i class="devicon-figma-plain colored"></i> Figma</span>
+                        <span class="badge-icon"><i class="devicon-graphql-plain colored"></i> GraphQL</span>
+                        <span class="badge-card"><i class="devicon-linux-plain colored"></i> Bash</span>
+                        <span class="badge-icon"><i class="devicon-linux-plain colored"></i> PowerShell</span>
+                        <span class="badge-card"><i class="devicon-scrum-original colored"></i> Scrum</span>
+                        <span class="badge-icon">CI/CD</span>
+                        <span class="badge-card">Agile</span>
+                        <span class="badge-icon">Zeplin</span>
+                        <span class="badge-card">Code Reviews</span>
+                    </div>
+
+                    <h3 class="mb-4">Backend</h3>
+                    <div class="d-flex flex-wrap gap-2 skills-badge-container">
+                        <span class="badge-card"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="badge-icon"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="badge-card"><i class="devicon-postgresql-plain colored"></i> SQL</span>
+                        <span class="badge-icon"><i class="devicon-amazonwebservices-original colored"></i> AWS</span>
+                        <span class="badge-card">RESTful APIs</span>
+                        <span class="badge-icon">Rest Web Services</span>
+                        <span class="badge-card">NoSQL</span>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>AWS</h5>
-                                    <hr class="text-primary my-2">
-                                    <img class="img-thumbnail rounded" width="50%" src="img/AWS.png" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Azure</h5>
-                                    <hr class="text-primary my-2">
-                                    <img class="img-thumbnail rounded"  width="50%" src="img/Azure.png" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Jenkins</h5>
-                                    <hr class="text-primary my-2">
-                                    <img class="img-thumbnail rounded"  width="50%" src="img/1200px-Jenkins_logo.png" alt="">
-
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Bash/Powershell</h5>
-                                    <hr class="text-primary my-2">
-                                    <img class="img-thumbnail rounded" width="50%" src="img/powershell.png" alt="">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>UI Design Course</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>IOS Development</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Web Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Apps Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
             </div>
         </div>
     </div>
@@ -286,7 +243,8 @@
                     <h1 class="display-5 mb-0">Work Experience</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="#about">Hire Me</a>
+                    <a class="btn btn-primary py-3 px-5" href="DASUNI UTHPALA - Full Stack Developer Resume.pdf"
+                        target="_blank">View Resume</a>
                 </div>
             </div>
             <div class="row g-4">
@@ -296,22 +254,73 @@
                             <i class="fa fa-crop-alt fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
+                            <h4 class="mb-3">Junior Full Stack Developer</h4>
+                            <h6 class="mb-3"><span class="text-primary">IO Technology Consulting, LLC (Jun 2024 -
+                                    Present)</span>
+                            </h6>
+                            <span>
+                                <li>
+                                    Built and maintained <strong>full-stack applications</strong> using <strong>.NET
+                                        Framework</strong>, <strong>AngularJS</strong>, <strong>React.js</strong>,
+                                    <strong>Tailwind CSS</strong>, <strong>Bootstrap</strong>, <strong>Flutter</strong>,
+                                    <strong>Next.js</strong>, and <strong>SQL</strong> for enterprise clients.
+                                </li>
+                                <li>
+                                    Designed and implemented <strong>RESTful APIs</strong> to streamline data flow
+                                    between frontend and backend systems.
+                                </li>
+                                <li>
+                                    Developed optimized <strong>SQL queries</strong> and efficient database schemas to
+                                    support scalable, high-availability applications.
+                                </li>
+                                <li>
+                                    Utilized <strong>AWS DevOps</strong> and <strong>Jenkins</strong> to establish
+                                    <strong>CI/CD pipelines</strong> for seamless deployment workflows.
+                                </li>
+                                <li>
+                                    Delivered <strong>cross-platform mobile features</strong> using
+                                    <strong>Flutter</strong>, enhancing mobile accessibility and UX.
+                                </li>
+                                <li>
+                                    Worked in <strong>Agile environments</strong>, collaborating with product teams and
+                                    conducting code reviews to deliver high-quality, maintainable code.
+                                </li>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
                             <h4 class="mb-3">Software Engineer</h4>
-                            <h6 class="mb-3"><span class="text-primary">Frost Experience AB (Dec 2021 - Dec 2022)</span></h6>
-                            <span><li>
-                                During each sprint cycle, I designed and developed user-friendly UIs for the “Humanised”: HR Software and
-Payroll project, integrating <b>React</b>, <b>JSON</b>, <b>REST APIs</b>, and <b>NodeJS</b> and back-end support from <b>Jenkins</b>. The
-system aids small businesses in streamlining HR functions and enables the electronic signing of agreements for
-smoother contract management, with deployment to the cloud facilitated through <b>GitHub</b> <b>CI/CD</b>.
-                            </li>
-                            <li>
-                                Developed an <b>NLP</b> category prediction app allowisng users to input inquiries, which the system then categorizes into
-different buckets for streamlined navigation and response using <b>Python</b>, <b>React</b>, and <b>Flask API</b>.
-                            </li>
-                            <li>
-                                research on <b>yield curve forecasting</b>, while optimizing IT operations with <b>Docker</b> container implementation.
-                            </li>
-                        </span>
+                            <h6 class="mb-3"><span class="text-primary">Frost Experience AB (Dec 2021 - Dec 2022)</span>
+                            </h6>
+                            <span>
+                                <li>
+                                    Engineered scalable web applications using <strong>Next.js</strong>,
+                                    <strong>React.js</strong>, and <strong>TypeScript</strong>, focusing on performance
+                                    and user-centric design.
+                                </li>
+                                <li>
+                                    Maintained and enhanced <strong>CI/CD pipelines</strong> via
+                                    <strong>Jenkins</strong> to automate builds and deployments across environments.
+                                </li>
+                                <li>
+                                    Migrated legacy codebases to <strong>Next.js</strong> to improve rendering with
+                                    <strong>SSR/SSG</strong> and improve maintainability.
+                                </li>
+                                <li>
+                                    Integrated frontend systems with <strong>RESTful APIs</strong> through close
+                                    collaboration with backend developers.
+                                </li>
+                                <li>
+                                    Transformed UI based on <strong>Zeplin design guides</strong>, improving interface
+                                    consistency and overall user experience.
+                                </li>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -322,18 +331,31 @@ different buckets for streamlined navigation and response using <b>Python</b>, <
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Associate Software Engineer in AI</h4>
-                            <h6 class="mb-3"><span class="text-primary">Beta Launch (Dec 2020 - Dec 2021)</span></h6>
-                            <span><li>
-                                Developed and maintained the <b>’Planet Zero’</b> mobile app using <b>React Native</b> for <b>iOS</b> and <b>Android</b>, the platform
-offers a marketplace for unprocessed, locally sourced goods to sell their surplus raw materials seamlessly.
-                            </li>
-                            <li>
-                                Led the development of the ’Sanoma Utbildning ¨ Ovningsm¨astaren’ language learning app, utilizing <b>ReactJS</b>,
-                            <b>Redux</b>, <b>NextJs</b>, and <b>NodeJS</b>, where interactive features were seamlessly integrated to create Ovningsmastaren.se, a
-web application tailored to aid language learners through engaging exercises like quizzes, sentence matching, and
-word pairing, fostering both practice and comprehension.
-                            </li>
-                        </span>
+                            <h6 class="mb-3"><span class="text-primary">Beta Launch (Aug 2019 - Dec 2021)</span></h6>
+                            <span>
+                                <li>
+                                    Developed full-stack platforms with <strong>Next.js</strong>,
+                                    <strong>React.js</strong>, <strong>TypeScript</strong>, and <strong>Node.js</strong>
+                                    to support AI-driven applications.
+                                </li>
+                                <li>
+                                    Designed efficient <strong>SQL databases</strong> to store structured datasets for
+                                    analytics and reporting modules.
+                                </li>
+                                <li>
+                                    Integrated <strong>banking and payroll APIs</strong> for seamless financial
+                                    operations and secured data exchange.
+                                </li>
+                                <li>
+                                    Automated deployment pipelines using <strong>Jenkins</strong>, ensuring quick and
+                                    reliable product updates.
+                                </li>
+                                <li>
+                                    Participated in <strong>Agile ceremonies</strong>, conducted <strong>code
+                                        reviews</strong>, and contributed to technical discussions for continuous
+                                    product improvement.
+                                </li>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -344,15 +366,22 @@ word pairing, fostering both practice and comprehension.
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Software Developer - Intern</h4>
-                            <h6 class="mb-3"><span class="text-primary">Mitra Innovation (Jan 2020 - Aug 2020)</span></h6>
-                            <span> <li>
-                                Implemented robust testing strategies for <b>React Native</b> functions using <b>Jest</b>, while also developing reusable
-components for improved efficiency and consistency.
-                            </li>
-                            <li>
-                                Utilized <b>Zeplin</b> as a reference tool to maintain design integrity and enhance UI/UX consistency throughout the
-development process.
-                            </li></span>
+                            <h6 class="mb-3"><span class="text-primary">Mitra Innovation (Jan 2019 - Aug 2019)</span>
+                            </h6>
+                            <span>
+                                <li>
+                                    Wrote and maintained unit tests using <strong>Jest</strong> for <strong>React
+                                        Native</strong> modules, improving code reliability and coverage.
+                                </li>
+                                <li>
+                                    Created <strong>reusable React components</strong> to standardize UI elements across
+                                    multiple mobile and web projects.
+                                </li>
+                                <li>
+                                    Used <strong>Zeplin</strong> to collaborate closely with UI/UX designers and
+                                    implement pixel-perfect designs.
+                                </li>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -407,7 +436,7 @@ development process.
                             <div>
                                 <h5>George Brown College</h5>
                                 <span>Postgradute Certificate in Cloud Computing Technologies</span>
-                                <span>Following</span>
+                                <span>GPA: 4/4</span>
                             </div>
                             <i class="fa fa-arrow-right fa-2x text-primary"></i>
                         </div>
@@ -439,8 +468,11 @@ development process.
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/nlp.jpeg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/nlp.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/acchiato/NLP-Complain-Prediction"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/nlp.jpeg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/acchiato/NLP-Complain-Prediction"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -449,7 +481,9 @@ development process.
                         <img class="img-fluid" src="img/groceries.jpg" alt="">
                         <div class="portfolio-btn">
                             <!-- <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/groceries.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/acchiato/Price-Comparision-AI-System"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/acchiato/Price-Comparision-AI-System"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -458,7 +492,8 @@ development process.
                         <img class="img-fluid" src="img/music.png" alt="">
                         <div class="portfolio-btn"></i></a>
                             <!-- <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/music.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/acchiato/Text_Song-builder"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/acchiato/Text_Song-builder"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -467,7 +502,8 @@ development process.
                         <img class="img-fluid" src="img/plantina.jpeg" alt="">
                         <div class="portfolio-btn">
                             <!-- <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/plantina.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/acchiato/Plantina"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/acchiato/Plantina"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -476,7 +512,8 @@ development process.
                         <img class="img-fluid" src="img/skin.jpg" alt="">
                         <div class="portfolio-btn">
                             <!-- <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/acchiato/Skin_Disease"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/acchiato/Skin_Disease"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -485,7 +522,9 @@ development process.
                         <img class="img-fluid" src="img/plant.jpg" alt="">
                         <div class="portfolio-btn">
                             <!-- <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://github.com/acchiato/2004-Enterprise/tree/main/Final-Project/Plant-Disease"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                href="https://github.com/acchiato/2004-Enterprise/tree/main/Final-Project/Plant-Disease"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -510,44 +549,73 @@ development process.
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/tina.jpeg" alt="">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/tina.jpeg" alt="">
                                 <div class="testimonial-icon">
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dasuni has worked for Frost for nearly a year. During that period she has mainly worked with react native and app projects. She is a fast learner, she has excellent communication skills and go to attitude. She will be a great asset in any company.</p>
+                            <p class="fs-5 fst-italic">Dasuni has worked for Frost for nearly a year. During that period
+                                she has mainly worked with react native and app projects. She is a fast learner, she has
+                                excellent communication skills and go to attitude. She will be a great asset in any
+                                company.</p>
                             <hr class="w-25 mx-auto">
                             <h5>Tina RappTina Rapp</h5>
                             <span>CEO/Senior Project Manager at Frost AB</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/janaka.jpeg" alt="">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/janaka.jpeg" alt="">
                                 <div class="testimonial-icon">
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Quiet yet lively when the occasion called for it, Dasuni's supreme intelligence and ability to closely understand and engineer software requirements, for me characterized her time at Beta Launch. I had the pleasure of closely observing her growth across her role as Associate Software Engineer with us, displaying a level of maturity beyond her years by the end of her stint. 
+                            <p class="fs-5 fst-italic">Quiet yet lively when the occasion called for it, Dasuni's
+                                supreme intelligence and ability to closely understand and engineer software
+                                requirements, for me characterized her time at Beta Launch. I had the pleasure of
+                                closely observing her growth across her role as Associate Software Engineer with us,
+                                displaying a level of maturity beyond her years by the end of her stint.
 
-                                A constant learner, she relished the challenge of learning a fresh tech stack upon joining Beta Launch, going on to express herself creatively in carefully absorbing and implementing a variety of software engineering tasks. She complemented these skills with a special knack for effectively piecing resources together in completing jobs when required while forming close bonds with each of her team members. Equally, she'd make numerous contributions to our whole, such as helping arrange Beta Launch events, all the while her shy smile and warmth a permanent fixture.
-                                
-                                Considering her immense skill, team-first attitude, and her love of serving others over herself, I confidently recommend her and state any organization would be fortunate to have her join their ranks. I wish you well Dasuni and here's to seeing you excel even further in your career!</p>
+                                A constant learner, she relished the challenge of learning a fresh tech stack upon
+                                joining Beta Launch, going on to express herself creatively in carefully absorbing and
+                                implementing a variety of software engineering tasks. She complemented these skills with
+                                a special knack for effectively piecing resources together in completing jobs when
+                                required while forming close bonds with each of her team members. Equally, she'd make
+                                numerous contributions to our whole, such as helping arrange Beta Launch events, all the
+                                while her shy smile and warmth a permanent fixture.
+
+                                Considering her immense skill, team-first attitude, and her love of serving others over
+                                herself, I confidently recommend her and state any organization would be fortunate to
+                                have her join their ranks. I wish you well Dasuni and here's to seeing you excel even
+                                further in your career!</p>
                             <hr class="w-25 mx-auto">
                             <h5>Janaka Ediriweera</h5>
                             <span>Product Management Consultant at BetaLaunch</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/deshan.jpeg" alt="">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/deshan.jpeg" alt="">
                                 <div class="testimonial-icon">
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">It is hard for me to describe her briefly due to her many skills and qualities. 
+                            <p class="fs-5 fst-italic">It is hard for me to describe her briefly due to her many skills
+                                and qualities.
 
-                                A quality that set her apart was that she got along well with the rest of the team and was able to tie resources together in completing jobs when needed and also had no issues in requesting help if required. She was always open to receiving feedback for improvement while finding creative ways to do better. Always going beyond her immediate work role, Dasuni would cheerfully put in her time and effort into the numerous Beta Launch events organized, serving the team with her characteristically warm smile. Also, at Beta Launch, she had to learn a completely new technology stack, yet she adapted to this challenge and learned everything quickly!
-                                
-                                Due to these reasons and many others that set Dasuni apart in her work and as a person, I have no hesitation in recommending her to any organization and have no doubt she will excel in her career. It would be an absolute pleasure to work with her again!</p>
+                                A quality that set her apart was that she got along well with the rest of the team and
+                                was able to tie resources together in completing jobs when needed and also had no issues
+                                in requesting help if required. She was always open to receiving feedback for
+                                improvement while finding creative ways to do better. Always going beyond her immediate
+                                work role, Dasuni would cheerfully put in her time and effort into the numerous Beta
+                                Launch events organized, serving the team with her characteristically warm smile. Also,
+                                at Beta Launch, she had to learn a completely new technology stack, yet she adapted to
+                                this challenge and learned everything quickly!
+
+                                Due to these reasons and many others that set Dasuni apart in her work and as a person,
+                                I have no hesitation in recommending her to any organization and have no doubt she will
+                                excel in her career. It would be an absolute pleasure to work with her again!</p>
                             <hr class="w-25 mx-auto">
                             <h5>Deshan Madurajith</h5>
                             <span>Former Senior Software Developer at BetaLaunch</span>
@@ -591,11 +659,13 @@ development process.
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://github.com/acchiato"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/Dasuni/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://github.com/acchiato"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/Dasuni/"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -606,8 +676,10 @@ development process.
     <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container-xxl pt-5 px-0">
             <div class="bg-dark">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.6453903970073!2d-79.15388362381651!3d43.78021937109644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4da4d53606bf1%3A0x33e3fd5a2ba547e1!2sBathgate%20Dr%2C%20Scarborough%2C%20ON!5e0!3m2!1sen!2sca!4v1721184290008!5m2!1sen!2sca" frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.6453903970073!2d-79.15388362381651!3d43.78021937109644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4da4d53606bf1%3A0x33e3fd5a2ba547e1!2sBathgate%20Dr%2C%20Scarborough%2C%20ON!5e0!3m2!1sen!2sca!4v1721184290008!5m2!1sen!2sca"
+                    frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
         </div>
     </div>
@@ -616,15 +688,16 @@ development process.
 
     <!-- Copyright Start -->
     <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Dasuni Wickramasinghe</a>, All Right Reserved.
-                    </div>
-                    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-secondary" href="#">Dasuni Wickramasinghe</a>, All Right
+                    Reserved.
                 </div>
+
             </div>
         </div>
+    </div>
     </div>
     <!-- Copyright End -->
 
